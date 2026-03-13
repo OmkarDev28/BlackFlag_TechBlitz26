@@ -1,0 +1,13 @@
+{
+  "/api/appointments/available/route": "app/api/appointments/available/route.js",
+  "/api/appointments/route": "app/api/appointments/route.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/auth/logout/route": "app/api/auth/logout/route.js",
+  "/api/auth/register/route": "app/api/auth/register/route.js",
+  "/api/clinics/route": "app/api/clinics/route.js",
+  "/api/patients/route": "app/api/patients/route.js",
+  "/dashboard/doctor/page": "app/dashboard/doctor/page.js",
+  "/dashboard/patient/page": "app/dashboard/patient/page.js",
+  "/dashboard/receptionist/page": "app/dashboard/receptionist/page.js",
+  "/login/page": "app/login/page.js"
+}

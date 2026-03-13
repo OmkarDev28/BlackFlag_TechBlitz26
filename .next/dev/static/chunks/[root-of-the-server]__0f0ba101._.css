@@ -1,0 +1,165 @@
+/* [next]/internal/font/google/geist_a71539c9.module.css [app-client] (css) */
+@font-face {
+  font-family: Geist Fallback;
+  src: local(Arial);
+  ascent-override: 95.94%;
+  descent-override: 28.16%;
+  line-gap-override: 0.0%;
+  size-adjust: 104.76%;
+}
+
+.geist_a71539c9-module__T19VSG__className {
+  font-family: Geist, Geist Fallback;
+  font-style: normal;
+}
+
+.geist_a71539c9-module__T19VSG__variable {
+  --font-geist-sans: "Geist", "Geist Fallback";
+}
+
+/* [next]/internal/font/google/geist_mono_8d43a2aa.module.css [app-client] (css) */
+@font-face {
+  font-family: Geist Mono Fallback;
+  src: local(Arial);
+  ascent-override: 74.67%;
+  descent-override: 21.92%;
+  line-gap-override: 0.0%;
+  size-adjust: 134.59%;
+}
+
+.geist_mono_8d43a2aa-module__8Li5zG__className {
+  font-family: Geist Mono, Geist Mono Fallback;
+  font-style: normal;
+}
+
+.geist_mono_8d43a2aa-module__8Li5zG__variable {
+  --font-geist-mono: "Geist Mono", "Geist Mono Fallback";
+}
+
+/* [project]/src/app/globals.css [app-client] (css) */
+:root {
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --primary-light: #3b82f614;
+  --secondary: #64748b;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --bg-main: #f0f4f8;
+  --bg-card: #ffffffbf;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border: #ffffff4d;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --shadow-glass: 0 8px 32px 0 #1f268712;
+  --glass-stroke: 1px solid #fff6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-main);
+  background: radial-gradient(at 0 0, #3b82f626 0, #0000 50%), radial-gradient(at 50% 0, #8b5cf61a 0, #0000 50%), radial-gradient(at 100% 0, #14b8a61a 0, #0000 50%), #f8fafc;
+  min-height: 100vh;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+}
+
+.liquid-glass {
+  background: var(--bg-card);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: var(--glass-stroke);
+  box-shadow: var(--shadow-glass);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes springIn {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+
+  70% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-100%)skewX(-15deg);
+  }
+
+  100% {
+    transform: translateX(200%)skewX(-15deg);
+  }
+}
+
+.animate-spring {
+  animation: .6s cubic-bezier(.34, 1.56, .64, 1) forwards springIn;
+}
+
+.animate-fade {
+  animation: .5s ease-out forwards fadeIn;
+}
+
+button {
+  transition: all .3s cubic-bezier(.4, 0, .2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+button:active {
+  transform: scale(.94);
+}
+
+.btn-sheen:after {
+  content: "";
+  background: linear-gradient(to right, #0000, #ffffff4d, #0000);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%)skewX(-15deg);
+}
+
+button:hover.btn-sheen:after {
+  animation: .8s forwards sheen;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0000001a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0003;
+}
+
+/*# sourceMappingURL=%5Broot-of-the-server%5D__0f0ba101._.css.map*/
